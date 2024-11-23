@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #4e174a;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 25px 9%;
+  background-color: #b947b4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+span {
+  color: #bb95bb;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style: none;
+  margin-left: 35px;
+}
+
+.navbar ul li a {
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover a,
+.navbar ul li.active a {
+  color: #570b50;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 60px 9% 0;
+  color: #fff;
+}
+
+.home-info h1 {
+  font-size: 55px;
+}
+
+.home-info h2 {
+  font-size: 32px;
+  margin-top: 5px;
+}
+
+.home-info p {
+  font-size: 16px;
+  margin: 10px 0 25px;
+}
+
+.home-info .btn-sci {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #d797e4;
+  border: 2px solid #e6ebe3;
+  border-radius: 40px;
+  box-shadow: 0 0 10px #e2e4e1;
+  font-size: 16px;
+  color: #1f242d;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #eee3ed;
+  box-shadow: none;
+}
+
+.home-info .btn-sci .sci {
+  margin-left: 20px;
+}
+
+.home-info .btn-sci .sci a {
+  display: inline-flex;
+  padding: 8px;
+  border: 2px solid #e3ecdd;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #f094d4;
+  margin: 0 8px;
+  transition: 0.5s;
+}
+
+.home-info .btn-sci .sci a:hover {
+  background-color: #fadef2;
+  color: #665a5a;
+  box-shadow: 0 0 10px #797076;
+  transform: translateY(-35);
+  transition: 0.5s;
+}
+
+.home-img {
+  border-radius: 100%;
+}
+
+.home-img img {
+  position: relative;
+  width: 32vw;
+  border-radius: 100%;
+  box-shadow: 0 0 25px #e9b6dc;
+  cursor: pointer;
+}
+
+.home-img img:hover {
+  transform: scale(1.01);
+  filter: drop-shadow(0 0 25px #ebb3e1);
+}
